@@ -11,6 +11,7 @@
         public function run(){
             // echo substr($this->httpRequest()->requestURI(), 10);
             $controller = $this->getController();
+            var_dump($controller);
             $controller->execute();
 
             $this->httpResponse->setPage($controller->page());
